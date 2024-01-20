@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+
+    <!-- daisyui script -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+    <!-- tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'description-color': '#777',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="space-y-32 font-manrope">
+    <!-- header section start-->
+    <header class="container mx-auto">
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row font-manrope">
+
+                <div class="lg:w-1/2">
+
+                    <h1 class="font-manrope text-5xl lg:text-7xl font-extrabold">It's good
+                        <br>
+                        tea time at The
+                        <br>
+                        Tea House
+                    </h1>
+                    <p class="py-6 lg:w-[500px] text-description-color text-lg font-medium">Tea and Botanical Solutions
+                        Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn text-white bg-gradient-to-r from-[#FF8938] to-[#F00] ">Explore More</button>
+
+                </div>
+
+                <div class="lg:w-1/2">
+                    <!-- banner image -->
+                    <img src="./images/banner.png" class="rounded-lg" />
+
+                    <!-- ratings batch -->
+                    <div class="flex items-center drop-shadow-lg bg-white p-4 w-60 -mt-20 rounded-xl space-x-3">
+                        <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                        <div class="">
+
+                            <h3 class="text-3xl font-extrabold ">5.00</h3>
+                            <p class="text-description-color text-lg font-medium">Trust Pilot Ratings</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header section end-->
+
+    <!-- main section start -->
+    <main class="max-w-[1140px] mx-5 lg:mx-auto space-y-32">
+
+        <!-- Our Featured Products section start -->
+        <section class="text-center font-manrope">
+            <h2 class="text-5xl font-extrabold">Our Featured Products</h2>
+            <p class="text-description-color font-medium text-base lg:max-w-4xl mt-5 mx-auto">There are many variations
+                of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even slightly believable.</p>
+
+            <!-- card container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- first card -->
+                <div class="card p-8 space-y-11 bg-base-100  bg-gradient-to-r from-[#f4f4f400] to-[#F4F4F4] ">
+
+                    <figure><img src="./images/tea-1.png" alt="" /></figure>
+
+                    <div class="font-manrope text-center">
+                        <h2 class="font-extrabold text-2xl">Milk Tea</h2>
+                        <p class="text-description-color text-base font-semibold">Creamer could be replaced by fresh
+                            milk</p>
+                    </div>
+                </div>
+
+                <!-- second card -->
+                <div class="card p-8 space-y-11 bg-base-100  bg-gradient-to-r from-[#f4f4f400] to-[#F4F4F4] ">
+
+                    <figure><img src="./images/tea-2.png" alt="" /></figure>
+
+                    <div class="font-manrope text-center">
+                        <h2 class="font-extrabold text-2xl">Milk Tea</h2>
+                        <p class="text-description-color text-base font-semibold">Creamer could be replaced by fresh
+                            milk</p>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <div class="card p-8 space-y-11 bg-base-100  bg-gradient-to-r from-[#f4f4f400] to-[#F4F4F4] ">
+
+                    <figure><img src="./images/tea-3.png" alt="" /></figure>
+
+                    <div class="font-manrope text-center">
+                        <h2 class="font-extrabold text-2xl">Milk Tea</h2>
+                        <p class="text-description-color text-base font-semibold">Creamer could be replaced by fresh
+                            milk</p>
+                    </div>
+                </div>
+
+                <!-- fourth card -->
+                <div class="card p-8 space-y-11 bg-base-100  bg-gradient-to-r from-[#f4f4f400] to-[#F4F4F4] ">
+
+                    <figure><img src="./images/tea-4.png" alt="" /></figure>
+
+                    <div class="font-manrope text-center">
+                        <h2 class="font-extrabold text-2xl">Milk Tea</h2>
+                        <p class="text-description-color text-base font-semibold">Creamer could be replaced by fresh
+                            milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Featured Products section end -->
+
+        <!-- Great Tea, Freshly Presented section start -->
+        <section class="flex flex-col lg:flex-row-reverse lg:flex-row justify-center gap-12">
+
+            <div class="flex-1">
+
+                <h3 class="font-extrabold text-5xl mb-5">Great Tea, Freshly
+                    <br>Presented
+                </h3>
+
+                <p class="text-base font-medium text-description-color">The meaning of gong cha is chanese is to provide
+                    the best tea to emperor from all possessions . It represents the highest quality and self
+                    expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers because of
+                    good words of mouth and unique customized service orginated from Taiwan.</p>
+
+                <h3 class="mt-7 font-extrabold text-xl">Unique Taste</h3>
+
+                <p class="text-base font-medium text-description-color">A Unique and different style from other teapots
+                    gives a luxurious and minimalist impression</p>
+
+                <h3 class="mt-5 font-extrabold text-xl">Premium Quality</h3>
+
+                <p class="text-base font-medium text-description-color">Premium Quality that makes tea more elegant and
+                    more durable when you use it.</p>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 grid-rows-3 gap-7">
+
+                <div class="bg-gradient-to-r from-[#ff000038] to-[#fbe8db] rounded-xl">
+
+                </div>
+                <div class="row-span-2 bg-[#e6a62319] rounded-xl h-full w-full">
+                    <img class="my-10 mx-auto" src="./images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2  bg-[#57763919] rounded-xl w-full h-full">
+                    <img class="my-10 mx-auto" src="./images/fresh-2.png" alt="">
+
+                </div>
+                <div class="bg-gradient-to-r from-[#D9D9D9] to-[#ffffff00] rounded-xl">
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Great Tea, Freshly Presented section end -->
+
+    </main>
+    <!-- main section end -->
+
+    <!-- footer section start -->
+    <footer>
+
+    </footer>
+    <!-- footer section end -->
+
+</body>
+
+</html>
